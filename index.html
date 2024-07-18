@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- nav -->
+    <nav class="bg-white py-3 shadow d-flex align-items-center justify-content-between px-5 position-fixed w-100 mb-5">
+        <div class="logo d-flex align-items-center">
+            <i class="fa-solid fa-money-bill-transfer pb-2 me-2 fs-5" style="color: #63E6BE;"></i>
+            <h1 class="fs-3 fw-bolder">Customer Transactions</h1>
+        </div>
+        <div class="links">
+            <ul class="d-flex align-items-center mb-1 fs-6 fw-bolder px-5">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#">Add Customer</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-5" id="home">
+            <div class="container pt-5">
+                <div class="form  py-5 ">
+
+                    <!-- search -->
+                    <div class="searc mx-auto d-flex px-3 w-100 " id="search">
+                        <input type="text" name="" id="searchName" placeholder="Search By customer's Name "
+                            class="form-control  mx-1 shadow">
+                        <input type="number" name="" id="searchAmou" placeholder="Search By Amount"
+                            class="form-control  mx-1 py-3 shadow">
+                    </div>
+
+                    <!-- label -->
+                    <div class="Table my-5 overflow-hidden bg-white shadow rounded-3 border">
+                        <table id="table" class="table text-center mx-auto w-100 ">
+                            <thead>
+                                <tr>
+                                    <th>Customer Id</th>
+                                    <th>Name</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="tbody" class="py-2">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="chart container w-100 mx-auto d-flex justify-content-between px-5">
+
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                <canvas id="myBarChart" class="w-50 h-50 px-4"></canvas>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js">
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
